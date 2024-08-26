@@ -13,3 +13,36 @@
  *= require_tree .
  *= require_self
  */
+
+ body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea el contenido a la izquierda */
+    justify-content: flex-start; /* Alinea el contenido en la parte superior */
+    margin: 0;
+    padding: 20px; /* Opcional, añade algo de espacio alrededor del contenido */
+    background-color: white;
+}
+
+.title {
+    margin-bottom: 10px; /* Espacio entre el título y la cuadrícula */
+}
+
+.grid-container {
+    display: flex; /* Usa flexbox para alinear los items en una sola línea */
+    flex-wrap: wrap; /* Permite que los items se ajusten si es necesario */
+    gap: 10px; /* Espacio entre los items */
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #53a0ed; /* Turquesa */
+    color: white;
+    font-weight: bold;
+    width: 50px; /* Tamaño del cuadrado */
+    height: 50px;
+    text-align: center;
+    border-radius: 5px; /* Opcional, para bordes redondeados */
+}
